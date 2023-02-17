@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Cool Cursor",
+  "version": "1.0",
+  "description": "Красивый курсорчик для красивых ребятишек",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "src/main.js"
+      ],
+      "css": [
+        "src/style.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "src/images/default.gif",
+    "src/images/link.gif",
+    "src/images/pressing.gif",
+    "src/images/typing.gif"
+  ]
+}
