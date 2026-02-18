@@ -13,12 +13,12 @@ window.addEventListener("mousemove", (e) => {
   const isButton = e.target.closest("button");
 
   if (cursorType === "text") {
-    cursor.src = chrome.extension.getURL("src/images/typing.gif");
+    cursor.src = chrome.runtime.getURL("src/images/typing.gif");
   } else if (isLink) {
-    cursor.src = chrome.extension.getURL("src/images/link.gif");
+    cursor.src = chrome.runtime.getURL("src/images/link.gif");
   } else if (isButton || cursorType === "pointer") {
-    cursor.src = chrome.extension.getURL("src/images/pressing.gif");
+    cursor.src = chrome.runtime.getURL("src/images/pressing.gif");
   } else {
-    cursor.src = chrome.extension.getURL("src/images/default.gif");
+    cursor.src = chrome.runtime.getURL("src/images/default.gif");
   }
 });
